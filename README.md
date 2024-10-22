@@ -16,8 +16,13 @@ comunicar.
 ### 2° Passo - Configuração da rede
 
   Depois disso, é necessário configurar a rede de cada máquina abrindo o
-arquivo 50-cloud-init.yaml (sudo nano /etc/netplan/50-cloud-init.yaml), e deixando
-o adaptador 1 (enp0s3) com o dhcp ativado e o adaptador 2 (enp0s8) com um ip fixo
+arquivo 50-cloud-init.yaml com o comando:
+
+```bash
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+e deixar o adaptador 1 (enp0s3) com o dhcp ativado e o adaptador 2 (enp0s8) com um ip fixo
 (os ips de todas as máquinas devem pertencer à mesma rede). Eis um exemplo de
 conteúdo do arquivo:
 
